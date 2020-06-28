@@ -7,7 +7,7 @@
 	</listeners>
 	<test name="SoftVision">
 		<classes>
-			<class name="com..qa.tests.BuyingAnItem"></class>
+			<class name="com.qa.tests.BuyingAnItem"></class>
 		</classes>
 	</test>
 </suite>
