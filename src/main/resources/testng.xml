@@ -5,7 +5,7 @@
 	<listeners>
 		<listener class-name="com.qa.ExtentReportListener.ExtentReportListener" />
 	</listeners>
-	<test name=" ">
+	<test name="SoftVision">
 		<classes>
 			<class name="com..qa.tests.BuyingAnItem"></class>
 		</classes>

@@ -9,10 +9,7 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-
 import com.qa.keyword.base.Actions;
 import com.qa.keyword.base.Base;
 
@@ -28,7 +25,7 @@ import io.appium.java_client.AppiumDriver;
  * Getting the input data from the excel file for each step
  */
 public class KeyWordEngine {
-	public AppiumDriver driver;
+	public AppiumDriver<WebElement> driver;
 	public Properties prop;
 	public static Workbook book;
 	public static Sheet sheet;

@@ -32,6 +32,11 @@ public class Actions extends Base {
 		}
 	}
 	
+	/*
+	 * @parameters - locatortype and locatorvalue, input data  that are passing from the KeywordEngine
+	 *  Result- input field will be filled with the input data 
+	 */
+	
 	public void sendInputToAField(String locatorType, String locatorvalue,String inputdata) {
 		try {
 			locator = locatorValue(locatorType, locatorvalue);
@@ -44,6 +49,11 @@ public class Actions extends Base {
 		}
 	}
 	
+	/*
+	 * @parameters - locatortype and locatorvalue, input data  that are passing from the KeywordEngine
+	 *  Result- fails the test if assertion fails 
+	 */
+	
 	public void assertion(String locatorType, String locatorvalue,String expectedtext) {
 		try {
 			locator = locatorValue(locatorType, locatorvalue);
@@ -53,6 +63,11 @@ public class Actions extends Base {
 			System.err.format("No Element Found to enter text" + e);
 		}
 	}
+	
+	/*
+	 * @parameters - locatortype and locatorvalue, inputdata  that are passing from the KeywordEngine
+	 *  Result- fails the test if assertion fails 
+	 */
 	
 	public WebElement pickOneElementFromTheList(String locatorType, String locatorvalue,String expectedtext) {
 		try {
@@ -66,6 +81,12 @@ public class Actions extends Base {
 		
 	}
 
+	
+	/*
+	 * @parameters - locatortype and locatorvalue,   that are passing from the KeywordEngine
+	 *  Result- it gives a locator
+	 */
+	
 	public By locatorValue(String locatorType, String value) {
 		By by;
 		switch (locatorType) {
