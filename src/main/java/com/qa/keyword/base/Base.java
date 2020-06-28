@@ -22,7 +22,7 @@ public class Base {
 	public Properties init_properties(){
 		prop = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream("C:\\Users\\AC37118\\Downloads\\Keyword-Driven-SoftvisionProject\\Keyword-Driven-SoftVision\\src\\main\\java\\com\\qa\\hs\\keyword\\config\\config.properties");
+			FileInputStream ip = new FileInputStream("C:\\Users\\AC37118\\Downloads\\Keyword-Driven-SoftvisionProject\\Keyword-Driven-SoftVision\\src\\main\\java\\com\\qa\\keyword\\config\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
